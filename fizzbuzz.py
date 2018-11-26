@@ -1,6 +1,7 @@
 import os
 
-if __name__ == '__main__':
+
+def main():
     result = []
     # Get env variables
     prenom = os.getenv("PRENOM", "Toto")
@@ -17,4 +18,9 @@ if __name__ == '__main__':
         else:
             result.append(i)
 
+    return result
+
+
+if __name__ == '__main__':
+    result = main()
     print(result)
